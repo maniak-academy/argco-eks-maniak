@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todoapp
+spec:
+  selector:
+    matchLabels:
+      app: todoapp
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: todoapp
+    spec:
+      containers:
+      - name: todoapp
+        image: public.ecr.aws/s0z4e8b4/sebby-simple-task-app:latest
+        ports:
+        - containerPort: 80
