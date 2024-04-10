@@ -9,8 +9,8 @@ metadata:
     alb.ingress.kubernetes.io/inbound-cidrs: 0.0.0.0/0
     alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-east-1:616973157416:certificate/68ddcee4-f280-4ea9-ab0e-ed3f22a89e48"
     # Use this annotation (which must match a service name) to route traffic to HTTP2 backends.
-    alb.ingress.kubernetes.io/conditions.argogrpc: |
-      [{"field":"http-header","httpHeaderConfig":{"httpHeaderName": "Content-Type", "values":["application/grpc"]}}]
+    # alb.ingress.kubernetes.io/conditions.argogrpc: |
+    #   [{"field":"http-header","httpHeaderConfig":{"httpHeaderName": "Content-Type", "values":["application/grpc"]}}]
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
   name: myapp-ingress
   namespace: myapp
