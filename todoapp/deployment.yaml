@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: todoapp
-        image: public.ecr.aws/s0z4e8b4/sebby-simple-task-app:latest
+        image: public.ecr.aws/s0z4e8b4/sebby-simple-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
