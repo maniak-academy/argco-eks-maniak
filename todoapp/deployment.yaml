@@ -12,6 +12,7 @@ spec:
       labels:
         app: todoapp
     spec:
+      serviceAccountName: admin-todoapp
       containers:
       - name: todoapp
         image: 616973157416.dkr.ecr.us-east-1.amazonaws.com/sebbycorp-simple-task-app:latest
